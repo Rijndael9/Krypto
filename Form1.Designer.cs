@@ -1,16 +1,19 @@
-﻿namespace Lab1
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+namespace RSA_T
 {
     partial class Form1
     {
         /// <summary>
-        /// Требуется переменная конструктора.
+        /// 
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// 
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing"></param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,234 +23,155 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
-
+        #region Windows 
         /// <summary>
-        /// Обязательный метод для поддержки конструктора - не изменяйте
-        /// содержимое данного метода при помощи редактора кода.
+    
         /// </summary>
         private void InitializeComponent()
         {
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TB1 = new System.Windows.Forms.TextBox();
-            this.kTB = new System.Windows.Forms.TextBox();
-            this.TB2 = new System.Windows.Forms.TextBox();
-            this.encB = new System.Windows.Forms.Button();
-            this.decB = new System.Windows.Forms.Button();
-            this.GB1 = new System.Windows.Forms.GroupBox();
-            this.GB2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rlRB = new System.Windows.Forms.RadioButton();
-            this.lrRB = new System.Windows.Forms.RadioButton();
-            this.genB = new System.Windows.Forms.Button();
-            this.dirPB = new System.Windows.Forms.PictureBox();
-            this.formatCB = new System.Windows.Forms.CheckBox();
-            this.algGB = new System.Windows.Forms.GroupBox();
-            this.ecbRB = new System.Windows.Forms.RadioButton();
-            this.cbcRB = new System.Windows.Forms.RadioButton();
-            this.GB1.SuspendLayout();
-            this.GB2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dirPB)).BeginInit();
-            this.algGB.SuspendLayout();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(14, 34);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(761, 149);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.richTextBox2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.Location = new System.Drawing.Point(14, 442);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.Size = new System.Drawing.Size(758, 149);
+            this.richTextBox2.TabIndex = 1;
+            this.richTextBox2.Text = "";
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.richTextBox3.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox3.Location = new System.Drawing.Point(14, 215);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.Size = new System.Drawing.Size(579, 192);
+            this.richTextBox3.TabIndex = 2;
+            this.richTextBox3.Text = "";
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.richTextBox4.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox4.Location = new System.Drawing.Point(618, 215);
+            this.richTextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
+            this.richTextBox4.Size = new System.Drawing.Size(157, 149);
+            this.richTextBox4.TabIndex = 3;
+            this.richTextBox4.Text = "";
+            this.richTextBox4.WordWrap = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(665, 378);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 45);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Odswierz";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Napisz swoj text";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 15);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(17, 194);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ключ:";
+            this.label2.Size = new System.Drawing.Size(146, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Encrypted";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // TB1
+            // label3
             // 
-            this.TB1.Location = new System.Drawing.Point(6, 19);
-            this.TB1.Multiline = true;
-            this.TB1.Name = "TB1";
-            this.TB1.Size = new System.Drawing.Size(214, 53);
-            this.TB1.TabIndex = 3;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(619, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 17);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Klucz";
             // 
-            // kTB
+            // label4
             // 
-            this.kTB.Location = new System.Drawing.Point(88, 12);
-            this.kTB.Name = "kTB";
-            this.kTB.Size = new System.Drawing.Size(156, 20);
-            this.kTB.TabIndex = 4;
-            // 
-            // TB2
-            // 
-            this.TB2.Location = new System.Drawing.Point(6, 19);
-            this.TB2.Multiline = true;
-            this.TB2.Name = "TB2";
-            this.TB2.Size = new System.Drawing.Size(213, 53);
-            this.TB2.TabIndex = 5;
-            // 
-            // encB
-            // 
-            this.encB.Location = new System.Drawing.Point(26, 200);
-            this.encB.Name = "encB";
-            this.encB.Size = new System.Drawing.Size(90, 25);
-            this.encB.TabIndex = 6;
-            this.encB.Text = "Зашифровать";
-            this.encB.UseVisualStyleBackColor = true;
-            this.encB.Click += new System.EventHandler(this.encB_Click);
-            // 
-            // decB
-            // 
-            this.decB.Location = new System.Drawing.Point(132, 200);
-            this.decB.Name = "decB";
-            this.decB.Size = new System.Drawing.Size(100, 25);
-            this.decB.TabIndex = 7;
-            this.decB.Text = "Расшифровать";
-            this.decB.UseVisualStyleBackColor = true;
-            this.decB.Click += new System.EventHandler(this.decB_Click);
-            // 
-            // GB1
-            // 
-            this.GB1.Controls.Add(this.TB1);
-            this.GB1.Location = new System.Drawing.Point(12, 89);
-            this.GB1.Name = "GB1";
-            this.GB1.Size = new System.Drawing.Size(232, 85);
-            this.GB1.TabIndex = 8;
-            this.GB1.TabStop = false;
-            this.GB1.Text = "Вход";
-            // 
-            // GB2
-            // 
-            this.GB2.Controls.Add(this.TB2);
-            this.GB2.Location = new System.Drawing.Point(335, 89);
-            this.GB2.Name = "GB2";
-            this.GB2.Size = new System.Drawing.Size(238, 85);
-            this.GB2.TabIndex = 9;
-            this.GB2.TabStop = false;
-            this.GB2.Text = "Выход";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rlRB);
-            this.groupBox1.Controls.Add(this.lrRB);
-            this.groupBox1.Location = new System.Drawing.Point(265, 11);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(132, 72);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Направление";
-            // 
-            // rlRB
-            // 
-            this.rlRB.AutoSize = true;
-            this.rlRB.Location = new System.Drawing.Point(6, 42);
-            this.rlRB.Name = "rlRB";
-            this.rlRB.Size = new System.Drawing.Size(101, 17);
-            this.rlRB.TabIndex = 12;
-            this.rlRB.Text = "Справо налево";
-            this.rlRB.UseVisualStyleBackColor = true;
-            // 
-            // lrRB
-            // 
-            this.lrRB.AutoSize = true;
-            this.lrRB.Checked = true;
-            this.lrRB.Location = new System.Drawing.Point(6, 19);
-            this.lrRB.Name = "lrRB";
-            this.lrRB.Size = new System.Drawing.Size(101, 17);
-            this.lrRB.TabIndex = 11;
-            this.lrRB.TabStop = true;
-            this.lrRB.Text = "Слева направо";
-            this.lrRB.UseVisualStyleBackColor = true;
-            this.lrRB.CheckedChanged += new System.EventHandler(this.lrRB_CheckedChanged);
-            // 
-            // genB
-            // 
-            this.genB.Location = new System.Drawing.Point(26, 38);
-            this.genB.Name = "genB";
-            this.genB.Size = new System.Drawing.Size(98, 22);
-            this.genB.TabIndex = 11;
-            this.genB.Text = "Сгенерировать";
-            this.genB.UseVisualStyleBackColor = true;
-            this.genB.Click += new System.EventHandler(this.genB_Click);
-            // 
-            // dirPB
-            // 
-            this.dirPB.Image = global::Lab1.Properties.Resources.r;
-            this.dirPB.Location = new System.Drawing.Point(265, 108);
-            this.dirPB.Name = "dirPB";
-            this.dirPB.Size = new System.Drawing.Size(50, 50);
-            this.dirPB.TabIndex = 12;
-            this.dirPB.TabStop = false;
-            // 
-            // formatCB
-            // 
-            this.formatCB.AutoSize = true;
-            this.formatCB.Location = new System.Drawing.Point(129, 42);
-            this.formatCB.Name = "formatCB";
-            this.formatCB.Size = new System.Drawing.Size(45, 17);
-            this.formatCB.TabIndex = 13;
-            this.formatCB.Text = "Hex";
-            this.formatCB.UseVisualStyleBackColor = true;
-            this.formatCB.CheckedChanged += new System.EventHandler(this.formatCB_CheckedChanged);
-            // 
-            // algGB
-            // 
-            this.algGB.Controls.Add(this.cbcRB);
-            this.algGB.Controls.Add(this.ecbRB);
-            this.algGB.Location = new System.Drawing.Point(430, 13);
-            this.algGB.Name = "algGB";
-            this.algGB.Size = new System.Drawing.Size(123, 69);
-            this.algGB.TabIndex = 14;
-            this.algGB.TabStop = false;
-            this.algGB.Text = "Тип алгоритма";
-            // 
-            // ecbRB
-            // 
-            this.ecbRB.AutoSize = true;
-            this.ecbRB.Checked = true;
-            this.ecbRB.Location = new System.Drawing.Point(15, 20);
-            this.ecbRB.Name = "ecbRB";
-            this.ecbRB.Size = new System.Drawing.Size(46, 17);
-            this.ecbRB.TabIndex = 0;
-            this.ecbRB.TabStop = true;
-            this.ecbRB.Text = "ECB";
-            this.ecbRB.UseVisualStyleBackColor = true;
-            // 
-            // cbcRB
-            // 
-            this.cbcRB.AutoSize = true;
-            this.cbcRB.Location = new System.Drawing.Point(15, 43);
-            this.cbcRB.Name = "cbcRB";
-            this.cbcRB.Size = new System.Drawing.Size(46, 17);
-            this.cbcRB.TabIndex = 1;
-            this.cbcRB.Text = "CBC";
-            this.cbcRB.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(14, 412);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Decrypted";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 242);
-            this.Controls.Add(this.algGB);
-            this.Controls.Add(this.formatCB);
-            this.Controls.Add(this.dirPB);
-            this.Controls.Add(this.genB);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.GB2);
-            this.Controls.Add(this.GB1);
-            this.Controls.Add(this.decB);
-            this.Controls.Add(this.encB);
-            this.Controls.Add(this.kTB);
+            this.ClientSize = new System.Drawing.Size(798, 603);
+            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.richTextBox4);
+            this.Controls.Add(this.richTextBox3);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
-            this.Text = "DES";
-            this.GB1.ResumeLayout(false);
-            this.GB1.PerformLayout();
-            this.GB2.ResumeLayout(false);
-            this.GB2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dirPB)).EndInit();
-            this.algGB.ResumeLayout(false);
-            this.algGB.PerformLayout();
+            this.Text = "RSA";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,23 +179,15 @@
 
         #endregion
 
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TB1;
-        private System.Windows.Forms.TextBox kTB;
-        private System.Windows.Forms.TextBox TB2;
-        private System.Windows.Forms.Button encB;
-        private System.Windows.Forms.Button decB;
-        private System.Windows.Forms.GroupBox GB1;
-        private System.Windows.Forms.GroupBox GB2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rlRB;
-        private System.Windows.Forms.RadioButton lrRB;
-        private System.Windows.Forms.Button genB;
-        private System.Windows.Forms.PictureBox dirPB;
-        private System.Windows.Forms.CheckBox formatCB;
-        private System.Windows.Forms.GroupBox algGB;
-        private System.Windows.Forms.RadioButton cbcRB;
-        private System.Windows.Forms.RadioButton ecbRB;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
